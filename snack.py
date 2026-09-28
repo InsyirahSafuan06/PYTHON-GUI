@@ -41,9 +41,9 @@ if st.button("Calculate total", type="primary"):
         final_amount = total_cost - discount
         
         st.write(f"Discount applied (5%): RM {round(discount, 2)}")
-        st.write(f"### Final amount to pay: RM {round(final_amount, 2)}")
+        st.write(f"Final amount to pay: RM {round(final_amount, 2)}")
     else:
-        st.write(f"### Final amount to pay: RM {round(total_cost, 2)}")
+        st.write(f"Final amount to pay: RM {round(total_cost, 2)}")
 
 st.write("") 
 st.button("Clear all", on_click=lambda: st.session_state.update({"popcorn": 0, "hotdog": 0, "nachos": 0, "soft_drink": 0}))
